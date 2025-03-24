@@ -13,63 +13,63 @@ def printStrenght(numberOfTries):
 
     strenght = [
     '''
-          _______
-          |     |
-          |     0
-          |    /|\
-          |     |
-          |    / \
-          |
-          |
-         ---
+        _______
+        |     |
+        |     0
+        |    /|\\
+        |     |
+        |    / \\
+        |
+        |
+       ---
 
         ''',
     '''
-          _______
-          |     |
-          |     0
-          |    /|\
-          |     |
-          |    /
-          |
-          |
-         ---
+        _______
+        |     |
+        |     0
+        |    /|\\
+        |     |
+        |    /
+        |
+        |
+       ---
 
     ''',
     '''
-            _______
-            |     |
-            |     0
-            |    /|\
-            |     |
-            |
-            |
-            |
-           ---
+        _______
+        |     |
+        |     0
+        |    /|\\
+        |     |
+        |
+        |
+        |
+       ---
 
     ''',
     '''
-          _______
-          |     |
-          |     0
-          |    /|
-          |     |
-          |
-          |
-          |
-         ---
+        _______
+        |     |
+        |     0
+        |    /|
+        |     |
+        |
+        |
+        |
+       ---
 
     ''',
     '''
-          _______
-          |     |
-          |     0
-          |     |
-          |     |
-          |
-          |
-          |
-         ---
+        _______
+        |     |
+        |     0
+        |     |
+        |     |
+        |
+        |
+        |
+       ---
 
     ''',
     '''
@@ -97,6 +97,8 @@ def printStrenght(numberOfTries):
 
     ''',
     ]
+
+    print(strenght[numberOfTries])
 
 def startGame():
     # The possible challenges is separated in:
@@ -135,6 +137,7 @@ def startGame():
 
         while True:
 
+            printStrenght(numberOfTries)
             print('Right Words: ', ' '.join(rightWords))
             print('Wrong Words: ', ' '.join(wrongWords))
             print('Chances: ', numberOfTries)
